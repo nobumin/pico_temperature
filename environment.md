@@ -3,20 +3,17 @@
 Raspberry Pi Pico W + DS18B20 のファームウェアを、ローカルでビルド・書き込み・検証する
 ための手順書。対象 OS は Windows を主とし、必要に応じ macOS/Linux も補足する。
 
-## 0. ローカル作業ディレクトリ
+## 0. リポジトリの取得
 
-本プロジェクトのクローン先は以下の配下に限定する（他のローカルファイルは触れない）。
-
-```
-D:\from_mac\work_folder\DEVELOPPING\MEAS.jp\tempertature
-```
+任意の作業フォルダへクローンする。以下は Windows での例で、`D:\work\dev` の部分は
+各自の環境に読み替えること。
 
 ### クローン手順（Windows PowerShell）
 
 ```powershell
 # 作業フォルダへ移動（無ければ作成）
-New-Item -ItemType Directory -Force "D:\from_mac\work_folder\DEVELOPPING\MEAS.jp\tempertature"
-Set-Location "D:\from_mac\work_folder\DEVELOPPING\MEAS.jp\tempertature"
+New-Item -ItemType Directory -Force "D:\work\dev"
+Set-Location "D:\work\dev"
 
 # クローン（このディレクトリ配下に pico_temperature が作成される）
 git clone https://github.com/nobumin/pico_temperature.git
