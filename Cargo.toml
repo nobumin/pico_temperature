@@ -19,7 +19,7 @@ exclude = ["firmware", "firmware-esp32"]
 edition = "2021"
 license = "MIT"
 repository = "https://github.com/nobumin/pico_temperature"
-authors = ["nobumin <dragonlady.info@gmail.com>"]
+authors = ["nobumin"]
 
 [profile.release]
 # 組込み向け最適化 (firmware をビルドする際に有効)
